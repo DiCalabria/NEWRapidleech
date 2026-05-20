@@ -7,7 +7,7 @@ Build and Edited from https://github.com/Th3-822/rapidleech
 #### Quick Install (Ubuntu 22.04 / 24.04)
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/PBhadoo/Rapidleech/main/rapidleech.sh)
+bash <(curl -s https://raw.githubusercontent.com/DiCalabria/Rapidleech/main/rapidleech.sh)
 ```
 
 This installs PHP 8.3, Apache2, yt-dlp, ffmpeg, Deno, and all required extensions. Optionally sets up SSL.
