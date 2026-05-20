@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Anunza Downloads</title>
+    <title>DiCalabria Downloads</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,17 +61,24 @@
     <!-- Top Bar -->
     <header class="fl-topbar">
         <a href="/" class="fl-brand">
-            <!-- Anunza icon mark -->
-            <div class="anunza-mark"></div>
-            <!-- Anunza wordmark -->
+            <div class="dicalabria-logo">
+                <svg width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 28C18 16 26 8 38 8C50 8 58 16 58 28C58 38 51 44 38 44H18V28Z" fill="#7A0026"/>
+                    <path d="M20 44H44C44 52 38 58 30 58C24 58 20 52 20 44Z" fill="#B20710"/>
+                    <path d="M28 30V40" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M22 36L28 42L34 36" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="20" y="46" width="16" height="4" rx="2" fill="white"/>
+                    <path d="M48 16C54 18 58 24 58 30C52 30 46 26 44 20C43 17 45 15 48 16Z" fill="#4CAF50"/>
+                </svg>
+            </div>
             <div class="anunza-wordmark">
-                <span class="anunza-name">Anunza</span>
+                <span class="anunza-name">DiCalabria</span>
                 <span class="anunza-sub">Downloads</span>
             </div>
         </a>
-        <div class="fl-theme-btn" onclick="toggleTheme()" title="Toggle theme">
-            <span id="t-sun" class="fl-theme-icon">☀️</span>
-            <span id="t-moon" class="fl-theme-icon" style="display:none">🌙</span>
+        <div class="fl-theme-btn" onclick="toggleTheme()" title="Alterar tema">
+            <span id="t-sun" class="fl-theme-label">LIGHT</span>
+            <span id="t-moon" class="fl-theme-label" style="display:none">DARK</span>
             <div class="fl-theme-track"><div class="fl-theme-dot"></div></div>
         </div>
     </header>
