@@ -67,7 +67,7 @@
                 <path d="M68 62 L68 78 M62 72 L68 78 L74 72" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
             </svg>
             <div class="dc-wordmark">
-                <span class="dc-name">DiCalabria</span>
+                <span class="dc-name">Rapidleech</span>
                 <span class="dc-sub">Downloads</span>
             </div>
         </a>
