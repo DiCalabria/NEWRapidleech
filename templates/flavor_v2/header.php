@@ -9,16 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DiCalabria Downloads</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="<?php echo TEMPLATE_DIR; ?>styles/rl_style_pm.css">
 
-    <!-- Inline SVG favicon — DiCalabria -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='20' width='100' height='100' fill='%23E50914'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='44' fill='%23fff'%3EDC%3C/text%3E%3Crect x='18' y='72' width='64' height='6' rx='3' fill='%23fff' opacity='.7'/%3E%3C/svg%3E">
+    <!-- Favicon: DC monogram vermelho -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='20' width='100' height='100' fill='%23E50914'/%3E%3Cpath d='M22 25h20c14 0 22 8 22 25s-8 25-22 25H22V25z' fill='%23fff' opacity='.9'/%3E%3Cpath d='M62 35c8 0 16 6 16 15s-8 15-16 15' stroke='%23fff' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 
     <script type="text/javascript">
     /* <![CDATA[ */
@@ -28,7 +25,6 @@
     pic1 = new Image();
     pic1.src = "<?php echo TEMPLATE_DIR; ?>images/ajax-loading.gif";
 
-    /* ---- Theme ---- */
     (function(){
         var t = localStorage.getItem('fl-theme') || 'dark';
         document.documentElement.setAttribute('data-theme', t);
@@ -61,23 +57,23 @@
     <!-- Top Bar -->
     <header class="fl-topbar">
         <a href="/" class="fl-brand">
-            <!-- DiCalabria logo mark: DC monogram with download bar -->
-            <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect rx="18" width="100" height="100" fill="#E50914"/>
-                <!-- Monogram DC -->
-                <text x="50" y="58" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="46" fill="#ffffff">DC</text>
-                <!-- Download underline bar -->
-                <rect x="16" y="72" width="68" height="7" rx="3.5" fill="#ffffff" opacity="0.75"/>
+            <!-- Logo DiCalabria: letra D estilizada + seta download -->
+            <svg width="46" height="46" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect rx="16" width="100" height="100" fill="#E50914"/>
+                <!-- Letra D -->
+                <path d="M20 22 L20 78 L44 78 C62 78 76 65 76 50 C76 35 62 22 44 22 Z" fill="white" opacity="0.95"/>
+                <path d="M32 34 L44 34 C56 34 64 41 64 50 C64 59 56 66 44 66 L32 66 Z" fill="#E50914"/>
+                <!-- Seta download pequena no canto -->
+                <path d="M68 62 L68 78 M62 72 L68 78 L74 72" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
             </svg>
-            <!-- DiCalabria wordmark -->
-            <div class="anunza-wordmark">
-                <span class="anunza-name">DiCalabria</span>
-                <span class="anunza-sub">Downloads</span>
+            <div class="dc-wordmark">
+                <span class="dc-name">DiCalabria</span>
+                <span class="dc-sub">Downloads</span>
             </div>
         </a>
         <div class="fl-theme-btn" onclick="toggleTheme()" title="Toggle theme">
             <span id="t-sun" class="fl-theme-icon">
-                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
             </span>
             <span id="t-moon" class="fl-theme-icon" style="display:none">
                 <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/></svg>
